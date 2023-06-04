@@ -10,7 +10,7 @@ export default function App(props: AppProps) {
   const emotionCache = getEmotionCache();
 
   return (
-    <>
+    <div id="app">
       <Head>
         <title>Mantine with Tailwind</title>
         <meta
@@ -26,6 +26,6 @@ export default function App(props: AppProps) {
       >
         <Component {...pageProps} />
       </MantineProvider>
-    </>
+    </div>
   );
 }
